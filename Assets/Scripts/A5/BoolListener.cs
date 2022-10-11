@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class BoolListener : MonoBehaviour
 {
     public BoolVariable boolVariable;
-    private bool _previousValue = false;
+    public bool _previousValue = false;
 
     [System.Serializable]
 
@@ -15,9 +15,11 @@ public class BoolListener : MonoBehaviour
 
     void Start()
     {
-        var value = boolVariable.RuntimeValue;
-        onValueChanged.Invoke(value);
-        _previousValue = value;
+        //var value = boolVariable.RuntimeValue;
+        //onValueChanged.Invoke(value);
+        //_previousValue = value;
+
+        _previousValue = boolVariable.RuntimeValue;
     }
 
     private void Update()

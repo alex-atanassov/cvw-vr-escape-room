@@ -13,20 +13,25 @@ public class PopUpSystem : MonoBehaviour
     public float timer = 0f;
     private float elapsed = 0;
 
-    void Start()
+    //void Start()
+    //{
+    //    animator = GetComponent<Animator>();
+    //}
+
+    void OnEnable()
     {
-        animator = GetComponent<Animator>();
+        PopUp();
     }
 
     public void PopUp()
     {
         Debug.Log("Popup triggered");
-        animator.SetTrigger("pop");
+        GetComponent<Animator>().SetTrigger("pop");
     }
 
     public void Close()
     {
         Debug.Log("Popup closed");
-        animator.SetTrigger("close");
+        GetComponent<Animator>().SetTrigger("close");
     }
 }
