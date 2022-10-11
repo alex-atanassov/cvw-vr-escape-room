@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d676e9f070fc6f418c5ae2b586bc162, type: 3}
   m_Name: ToggleVolume
   m_EditorClassIdentifier: 
-  InitialValue: 1
+  InitialValue: 0

@@ -13,6 +13,13 @@ public class BoolListener : MonoBehaviour
     public class OnValueChanged : UnityEvent<bool> { };
     public OnValueChanged onValueChanged;
 
+    void Start()
+    {
+        var value = boolVariable.RuntimeValue;
+        onValueChanged.Invoke(value);
+        _previousValue = value;
+    }
+
     private void Update()
     {
         var value = boolVariable.RuntimeValue;
