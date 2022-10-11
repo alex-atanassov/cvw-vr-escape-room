@@ -1127,6 +1127,8 @@ GameObject:
   - component: {fileID: 57203792}
   - component: {fileID: 57203791}
   - component: {fileID: 57203793}
+  - component: {fileID: 57203795}
+  - component: {fileID: 57203794}
   m_Layer: 0
   m_Name: XRMultiplayer
   m_TagString: Untagged
@@ -1198,6 +1200,10 @@ MonoBehaviour:
     component: {fileID: 57203791}
   - componentID: 2
     component: {fileID: 57203793}
+  - componentID: 3
+    component: {fileID: 57203795}
+  - componentID: 4
+    component: {fileID: 57203794}
   _childViews: []
 --- !u!114 &57203793
 MonoBehaviour:
@@ -1212,6 +1218,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentValue: {fileID: 11400000, guid: b3ae4bcfefd12ed458206f4fab3e9077, type: 2}
+--- !u!114 &57203794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57203788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 575237dd17887cc459ce7ae319467e10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingTime: 90
+  time: {fileID: 11400000, guid: 935d96d714564024b83a71e4e242f7da, type: 2}
+  death: {fileID: 11400000, guid: f8f208689623b704caffb5b8895cb4f4, type: 2}
+  _realtime: {fileID: 1420024881}
+--- !u!114 &57203795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57203788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f83e94bcb7c29448edacea92b4eb23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentValue: {fileID: 11400000, guid: 935d96d714564024b83a71e4e242f7da, type: 2}
 --- !u!43 &59776917
 Mesh:
   m_ObjectHideFlags: 0
@@ -75550,7 +75585,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142842788}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fff2cd64c34c2264aa1ce44f4a690cb1, type: 3}
   m_Name: 

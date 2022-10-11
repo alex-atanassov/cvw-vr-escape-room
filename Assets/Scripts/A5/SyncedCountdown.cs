@@ -4,6 +4,9 @@ using UnityEngine;
 using NaughtyAttributes;
 using Normal.Realtime;
 
+// The current implementation resets the timer every time a player joins.
+// It is an acceptable result, if the players want to wait for each other before playing
+
 public class SyncedCountdown : RealtimeComponent<DoubleModel>
 {
     public float startingTime = 300f;
@@ -13,11 +16,11 @@ public class SyncedCountdown : RealtimeComponent<DoubleModel>
 
     private bool hasGameStarted = false;
 
-    private Realtime _realtime;
+    public Realtime _realtime;
 
     void Awake()
     {
-        _realtime = GetComponent<Realtime>();
+        //_realtime = GetComponent<Realtime>();
         _realtime.didConnectToRoom += DidConnectToRoom;
     }
 
