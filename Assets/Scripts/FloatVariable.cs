@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using NaughtyAttributes;
 
 [CreateAssetMenu]
 public class FloatVariable : ScriptableObject, ISerializationCallbackReceiver
@@ -17,4 +18,9 @@ public class FloatVariable : ScriptableObject, ISerializationCallbackReceiver
     }
 
     public void OnBeforeSerialize() { }
+
+    public void SetValue(float val)
+    {
+        RuntimeValue = val;
+    }
 }

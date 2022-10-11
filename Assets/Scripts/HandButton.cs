@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
+using NaughtyAttributes;
 
 public class HandButton : XRBaseInteractable
 {
@@ -90,7 +91,7 @@ public class HandButton : XRBaseInteractable
 
         if(inPosition && inPosition != previousPress)
         {
-            OnPress.Invoke();
+            Press();
         }
 
         previousPress = inPosition;
@@ -100,5 +101,11 @@ public class HandButton : XRBaseInteractable
     {
         float inRange = Mathf.Clamp(transform.localPosition.y, yMin, yMin + 0.01f);
         return transform.localPosition.y == inRange;
+    }
+
+    [Button]
+    public void Press()
+    {
+        OnPress.Invoke();
     }
 }

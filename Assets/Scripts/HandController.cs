@@ -7,9 +7,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class HandController : MonoBehaviour
 {
     public XRController controller;
-    public Hand.Buttons trigger;
-    public Hand.Buttons grip;
-    public Hand hand;
+    public HandXRRig.Buttons trigger;
+    public HandXRRig.Buttons grip;
+    public HandXRRig hand;
     
     // Start is called before the first frame update
     void Start()
