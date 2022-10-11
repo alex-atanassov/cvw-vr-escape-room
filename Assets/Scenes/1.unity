@@ -1322,6 +1322,8 @@ MonoBehaviour:
     component: {fileID: 57203801}
   - componentID: 11
     component: {fileID: 57203800}
+  - componentID: 12
+    component: {fileID: 0}
   _childViews: []
 --- !u!114 &57203793
 MonoBehaviour:
@@ -1348,7 +1350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 575237dd17887cc459ce7ae319467e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingTime: 30
+  startingTime: 90
   time: {fileID: 11400000, guid: 935d96d714564024b83a71e4e242f7da, type: 2}
   death: {fileID: 11400000, guid: f8f208689623b704caffb5b8895cb4f4, type: 2}
   _realtime: {fileID: 1420024881}
@@ -10681,7 +10683,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320506
+  m_Name: pb_Mesh504750
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23562,7 +23564,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh321082
+  m_Name: pb_Mesh505252
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -58665,9 +58667,9 @@ MonoBehaviour:
   events:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7619771}
-        m_TargetAssemblyTypeName: UnityEngine.Light, UnityEngine
-        m_MethodName: set_intensity
+      - m_Target: {fileID: 11400000, guid: b4ca56c86d38d52459bcd3124330c036, type: 2}
+        m_TargetAssemblyTypeName: FloatVariable, Assembly-CSharp
+        m_MethodName: SetValue
         m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -58677,9 +58679,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 424605571}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: set_volume
+      - m_Target: {fileID: 11400000, guid: b3ae4bcfefd12ed458206f4fab3e9077, type: 2}
+        m_TargetAssemblyTypeName: FloatVariable, Assembly-CSharp
+        m_MethodName: SetValue
         m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -58689,10 +58691,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1791737391}
-        m_TargetAssemblyTypeName: PhysicsMover, Assembly-CSharp
-        m_MethodName: Deactivate
-        m_Mode: 1
+      - m_Target: {fileID: 11400000, guid: cc336687fc6deab4a99b97214488f966, type: 2}
+        m_TargetAssemblyTypeName: BoolVariable, Assembly-CSharp
+        m_MethodName: SetValue
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -58701,10 +58703,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 887233641}
-        m_TargetAssemblyTypeName: PhysicsMover, Assembly-CSharp
-        m_MethodName: Deactivate
-        m_Mode: 1
+      - m_Target: {fileID: 11400000, guid: a22381f7928981b45b5d41c76da35b35, type: 2}
+        m_TargetAssemblyTypeName: BoolVariable, Assembly-CSharp
+        m_MethodName: SetValue
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -58729,6 +58731,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: BoolVariable, Assembly-CSharp
         m_MethodName: SetValue
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 554239039}
+        m_TargetAssemblyTypeName: TriggerVolume, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -59123,7 +59137,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320038
+  m_Name: pb_Mesh504326
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -60274,7 +60288,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh321164
+  m_Name: pb_Mesh505320
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -60475,7 +60489,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh321336
+  m_Name: pb_Mesh505468
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -60715,7 +60729,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh321204
+  m_Name: pb_Mesh505350
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -64183,7 +64197,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh321376
+  m_Name: pb_Mesh505494
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -64353,14 +64367,8 @@ GameObject:
   - component: {fileID: 716169838}
   - component: {fileID: 716169837}
   - component: {fileID: 716169836}
-  - component: {fileID: 716169840}
-  - component: {fileID: 716169839}
-  - component: {fileID: 716169842}
-  - component: {fileID: 716169841}
   - component: {fileID: 716169846}
   - component: {fileID: 716169845}
-  - component: {fileID: 716169844}
-  - component: {fileID: 716169843}
   - component: {fileID: 716169848}
   - component: {fileID: 716169847}
   m_Layer: 0
@@ -64456,137 +64464,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &716169839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716169834}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78d249f6d61faf84e876c675250adda1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  death: {fileID: 0}
-  _speed: 1
-  _intesity: 0
-  _color: {r: 0, g: 0, b: 0, a: 1}
-  _fadeMaterial: {fileID: 2100000, guid: 3cabd1dc770d91e468a7e34ee53df807, type: 2}
---- !u!135 &716169840
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716169834}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.2
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &716169841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716169834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7482434e29e25c4f8fdc3a4136e4365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: f8f208689623b704caffb5b8895cb4f4, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 716169842}
-        m_TargetAssemblyTypeName: FadeToBlack, Assembly-CSharp
-        m_MethodName: FadeBlack
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &716169842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716169834}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8b8228b99120314d9dbcfc11a825192, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  death: {fileID: 11400000, guid: f8f208689623b704caffb5b8895cb4f4, type: 2}
-  _speed: 1
-  _intesity: 0
-  _color: {r: 0, g: 0, b: 0, a: 1}
-  _fadeMaterial: {fileID: 2100000, guid: 3cabd1dc770d91e468a7e34ee53df807, type: 2}
---- !u!114 &716169843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716169834}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7482434e29e25c4f8fdc3a4136e4365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 28678faf2411cd2418d5a2556233bc4a, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 512971642}
-        m_TargetAssemblyTypeName: PopUpSystem, Assembly-CSharp
-        m_MethodName: PopUp
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &716169844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716169834}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7482434e29e25c4f8fdc3a4136e4365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: f8f208689623b704caffb5b8895cb4f4, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1650218317}
-        m_TargetAssemblyTypeName: PopUpSystem, Assembly-CSharp
-        m_MethodName: PopUp
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &716169845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64603,9 +64480,9 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: de9044fb3e7660d4c8e935090fe1acf4, type: 2}
-        m_TargetAssemblyTypeName: BoolVariable, Assembly-CSharp
-        m_MethodName: SetValue
+      - m_Target: {fileID: 512971641}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -64631,9 +64508,9 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 863472978ad8e4e4ca730c0cef4b335b, type: 2}
-        m_TargetAssemblyTypeName: BoolVariable, Assembly-CSharp
-        m_MethodName: SetValue
+      - m_Target: {fileID: 1650218311}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -64660,10 +64537,10 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 512971641}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 0
+      - m_Target: {fileID: 512971642}
+        m_TargetAssemblyTypeName: PopUpSystem, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -64689,10 +64566,10 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1650218311}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 0
+      - m_Target: {fileID: 1650218317}
+        m_TargetAssemblyTypeName: PopUpSystem, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -64707,7 +64584,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320828
+  m_Name: pb_Mesh505024
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -65537,7 +65414,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh321640
+  m_Name: pb_Mesh505732
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -65701,7 +65578,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320986
+  m_Name: pb_Mesh505172
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -65865,7 +65742,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320876
+  m_Name: pb_Mesh505064
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -66252,7 +66129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh321746
+  m_Name: pb_Mesh505816
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -67402,7 +67279,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh322130
+  m_Name: pb_Mesh506132
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -67566,7 +67443,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320770
+  m_Name: pb_Mesh504978
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -68362,7 +68239,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh321838
+  m_Name: pb_Mesh505902
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -70395,7 +70272,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh322182
+  m_Name: pb_Mesh506178
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -71302,7 +71179,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320266
+  m_Name: pb_Mesh504538
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -73276,7 +73153,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320698
+  m_Name: pb_Mesh504918
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -73440,7 +73317,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320328
+  m_Name: pb_Mesh504598
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -73604,7 +73481,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320624
+  m_Name: pb_Mesh504846
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -76514,11 +76391,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1142842793}
-  - component: {fileID: 1142842792}
   - component: {fileID: 1142842791}
   - component: {fileID: 1142842790}
   - component: {fileID: 1142842789}
-  - component: {fileID: 1142842794}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -76542,18 +76417,17 @@ MonoBehaviour:
   Response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 424605571}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: PlayOneShot
-        m_Mode: 2
+      - m_Target: {fileID: 512971641}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 7a74ae78d473f5a4ea12587c42d09c9f,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1142842790
 MonoBehaviour:
@@ -76598,21 +76472,6 @@ MonoBehaviour:
   countKnock: 0
   requiredKnocks: 3
   OpenDoor: {fileID: 11400000, guid: ca466b281e9372044a1f46ad2747ff07, type: 2}
---- !u!114 &1142842792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142842788}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fff2cd64c34c2264aa1ce44f4a690cb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingTime: 90
-  time: {fileID: 11400000, guid: 935d96d714564024b83a71e4e242f7da, type: 2}
-  death: {fileID: 11400000, guid: f8f208689623b704caffb5b8895cb4f4, type: 2}
 --- !u!4 &1142842793
 Transform:
   m_ObjectHideFlags: 0
@@ -76628,34 +76487,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1142842794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142842788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7482434e29e25c4f8fdc3a4136e4365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 28678faf2411cd2418d5a2556233bc4a, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1142842792}
-        m_TargetAssemblyTypeName: Countdown, Assembly-CSharp
-        m_MethodName: Stop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1148078015
 GameObject:
   m_ObjectHideFlags: 0
@@ -81131,79 +80962,7 @@ MonoBehaviour:
   inputType: 1
   events:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7619771}
-        m_TargetAssemblyTypeName: UnityEngine.Light, UnityEngine
-        m_MethodName: set_intensity
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 424605571}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: set_volume
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1791737391}
-        m_TargetAssemblyTypeName: PhysicsMover, Assembly-CSharp
-        m_MethodName: Deactivate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 887233641}
-        m_TargetAssemblyTypeName: PhysicsMover, Assembly-CSharp
-        m_MethodName: Deactivate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 863472978ad8e4e4ca730c0cef4b335b, type: 2}
-        m_TargetAssemblyTypeName: BoolVariable, Assembly-CSharp
-        m_MethodName: SetValue
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: de9044fb3e7660d4c8e935090fe1acf4, type: 2}
-        m_TargetAssemblyTypeName: BoolVariable, Assembly-CSharp
-        m_MethodName: SetValue
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1270876058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81557,79 +81316,7 @@ MonoBehaviour:
   inputType: 1
   events:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7619771}
-        m_TargetAssemblyTypeName: UnityEngine.Light, UnityEngine
-        m_MethodName: set_intensity
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 424605571}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: set_volume
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1791737391}
-        m_TargetAssemblyTypeName: PhysicsMover, Assembly-CSharp
-        m_MethodName: Deactivate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 887233641}
-        m_TargetAssemblyTypeName: PhysicsMover, Assembly-CSharp
-        m_MethodName: Deactivate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 863472978ad8e4e4ca730c0cef4b335b, type: 2}
-        m_TargetAssemblyTypeName: BoolVariable, Assembly-CSharp
-        m_MethodName: SetValue
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: de9044fb3e7660d4c8e935090fe1acf4, type: 2}
-        m_TargetAssemblyTypeName: BoolVariable, Assembly-CSharp
-        m_MethodName: SetValue
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1001 &1315304586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84266,7 +83953,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320924
+  m_Name: pb_Mesh505112
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -89574,7 +89261,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh321008
+  m_Name: pb_Mesh505192
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -90479,7 +90166,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320130
+  m_Name: pb_Mesh504414
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -90643,7 +90330,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320206
+  m_Name: pb_Mesh504488
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -93244,7 +92931,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh321284
+  m_Name: pb_Mesh505426
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -93563,7 +93250,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: a22381f7928981b45b5d41c76da35b35, type: 2}
+      - m_Target: {fileID: 11400000, guid: cc336687fc6deab4a99b97214488f966, type: 2}
         m_TargetAssemblyTypeName: BoolVariable, Assembly-CSharp
         m_MethodName: SetValue
         m_Mode: 6
@@ -93575,7 +93262,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: cc336687fc6deab4a99b97214488f966, type: 2}
+      - m_Target: {fileID: 11400000, guid: a22381f7928981b45b5d41c76da35b35, type: 2}
         m_TargetAssemblyTypeName: BoolVariable, Assembly-CSharp
         m_MethodName: SetValue
         m_Mode: 6
@@ -93600,18 +93287,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: de9044fb3e7660d4c8e935090fe1acf4, type: 2}
-        m_TargetAssemblyTypeName: BoolVariable, Assembly-CSharp
-        m_MethodName: SetValue
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 51f011234829b9e4bb581d72ba12da0f, type: 2}
         m_TargetAssemblyTypeName: BoolVariable, Assembly-CSharp
         m_MethodName: SetValue
         m_Mode: 6
@@ -95830,7 +95505,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320958
+  m_Name: pb_Mesh505144
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -96115,7 +95790,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929234843}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a7482434e29e25c4f8fdc3a4136e4365, type: 3}
   m_Name: 
@@ -97397,7 +97072,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320420
+  m_Name: pb_Mesh504686
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -97756,7 +97431,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320406
+  m_Name: pb_Mesh504672
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -98145,7 +97820,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh320158
+  m_Name: pb_Mesh504442
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -98766,7 +98441,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh321890
+  m_Name: pb_Mesh505952
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -99745,7 +99420,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh322042
+  m_Name: pb_Mesh506068
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

@@ -60,10 +60,6 @@ public class Brush : MonoBehaviour {
 
         bool triggerPressed = (trigger.TryGetFeatureValue(UnityEngine.XR.CommonUsages.triggerButton, out bool triggerValue) && triggerValue);
 
-        //// These following two lines have been modified!!
-        //trigger.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue);
-        //bool triggerPressed = triggerValue > 0.1f;
-
         Debug.Log("Trigger pressed: " + triggerPressed);
 
         // If we lose tracking, stop drawing

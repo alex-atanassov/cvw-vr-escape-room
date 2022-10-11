@@ -12,6 +12,8 @@ public class BoolListener : MonoBehaviour
 
     public class OnValueChanged : UnityEvent<bool> { };
     public OnValueChanged onValueChanged;
+    //public OnValueChanged onValueTrue;
+    //public OnValueChanged onValueFalse;
 
     void Start()
     {
@@ -29,6 +31,11 @@ public class BoolListener : MonoBehaviour
         {
             onValueChanged.Invoke(value);
             _previousValue = value;
+
+            //if(value) 
+            //    onValueTrue.Invoke(value); 
+            //else
+            //    onValueFalse.Invoke(value);
         }
     }
 }

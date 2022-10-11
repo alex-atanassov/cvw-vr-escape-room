@@ -5,6 +5,7 @@ using UnityEngine;
 public class TriggerVolume : MonoBehaviour
 {
     public GameEvent win;
+    private bool hasWon = false;
 
     private void OnTriggerEnter(Collider other)
     {

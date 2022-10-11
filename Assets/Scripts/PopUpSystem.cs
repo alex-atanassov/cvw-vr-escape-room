@@ -34,4 +34,9 @@ public class PopUpSystem : MonoBehaviour
         Debug.Log("Popup closed");
         GetComponent<Animator>().SetTrigger("close");
     }
+
+    public void Reset()
+    {
+        gameObject.SetActive(false);
+    }
 }
