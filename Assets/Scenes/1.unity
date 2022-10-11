@@ -1126,6 +1126,7 @@ GameObject:
   - component: {fileID: 57203789}
   - component: {fileID: 57203792}
   - component: {fileID: 57203791}
+  - component: {fileID: 57203793}
   m_Layer: 0
   m_Name: XRMultiplayer
   m_TagString: Untagged
@@ -1195,7 +1196,22 @@ MonoBehaviour:
   _components:
   - componentID: 1
     component: {fileID: 57203791}
+  - componentID: 2
+    component: {fileID: 57203793}
   _childViews: []
+--- !u!114 &57203793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57203788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f83e94bcb7c29448edacea92b4eb23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentValue: {fileID: 11400000, guid: b3ae4bcfefd12ed458206f4fab3e9077, type: 2}
 --- !u!43 &59776917
 Mesh:
   m_ObjectHideFlags: 0
@@ -23249,6 +23265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 424605570}
   - component: {fileID: 424605571}
+  - component: {fileID: 424605572}
   m_Layer: 0
   m_Name: AmbientMusic
   m_TagString: Untagged
@@ -23367,6 +23384,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &424605572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424605569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8754f849f35c88844bf9782fdea40fdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatVariable: {fileID: 11400000, guid: b3ae4bcfefd12ed458206f4fab3e9077, type: 2}
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 424605571}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: set_volume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &426187958
 GameObject:
   m_ObjectHideFlags: 0
@@ -23492,9 +23537,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 424605571}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: set_volume
+      - m_Target: {fileID: 11400000, guid: b3ae4bcfefd12ed458206f4fab3e9077, type: 2}
+        m_TargetAssemblyTypeName: FloatVariable, Assembly-CSharp
+        m_MethodName: SetValue
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -59506,7 +59551,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh123826
+  m_Name: pb_Mesh131932
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
